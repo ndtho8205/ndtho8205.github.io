@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Black Rabbit</title>
-    <link>http://ndtho.github.io/categories/</link>
+    <link>http://ndtho8205.github.io/categories/</link>
     <description>Recent content in Categories on Black Rabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://ndtho.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ndtho8205.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>General</title>
-      <link>http://ndtho.github.io/categories/general/</link>
+      <link>http://ndtho8205.github.io/categories/general/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://ndtho.github.io/categories/general/</guid>
+      <guid>http://ndtho8205.github.io/categories/general/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>http://ndtho.github.io/categories/programming/</link>
+      <link>http://ndtho8205.github.io/categories/programming/</link>
       <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ndtho.github.io/categories/programming/</guid>
+      <guid>http://ndtho8205.github.io/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Psychology</title>
-      <link>http://ndtho.github.io/categories/psychology/</link>
+      <link>http://ndtho8205.github.io/categories/psychology/</link>
       <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://ndtho.github.io/categories/psychology/</guid>
+      <guid>http://ndtho8205.github.io/categories/psychology/</guid>
       <description></description>
     </item>
     
