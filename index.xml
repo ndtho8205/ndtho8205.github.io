@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Black Rabbit</title>
+    <link>http://ndtho.github.io/</link>
+    <description>Recent content on Black Rabbit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ndtho.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome to my new blog</title>
-      <link>http://example.org/post/2018-02-01-welcome-to-my-new-blog/</link>
+      <link>http://ndtho.github.io/post/2018-02-01-welcome-to-my-new-blog/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2018-02-01-welcome-to-my-new-blog/</guid>
+      <guid>http://ndtho.github.io/post/2018-02-01-welcome-to-my-new-blog/</guid>
       <description>Tèn ten ten tennn :laughing:
 Sau hơn 1 năm vắng bóng, em ấy đã trở lại và xinh đẹp hơn xưa :smile:
 Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp được hình, để mọi người so sánh, em nó thời &amp;ldquo;bán sữa đậu nành&amp;rdquo;, và &amp;ldquo;đạp chiếc xe màu xanh&amp;rdquo; với cái thời hiện đại bây giờ. Nếu mà có, chắc mọi người sẽ ngạc nhiên lắm lắm về cái sự gọi là nhan sắc của em nó.</description>
@@ -24,10 +24,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Sức mạnh của người hướng nội</title>
-      <link>http://example.org/post/2015-09-27-suc-manh-cua-nguoi-huong-noi/</link>
+      <link>http://ndtho.github.io/post/2015-09-27-suc-manh-cua-nguoi-huong-noi/</link>
       <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-09-27-suc-manh-cua-nguoi-huong-noi/</guid>
+      <guid>http://ndtho.github.io/post/2015-09-27-suc-manh-cua-nguoi-huong-noi/</guid>
       <description>&lt;iframe width=&#34;630&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/kk9544Mfiww&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;blockquote&gt;
@@ -39,11 +39,11 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Chương trình nhận dạng chữ cái A, B, C cơ bản</title>
-      <link>http://example.org/post/2015-06-21-nhan-dang-abc-co-ban/</link>
+      <link>http://ndtho.github.io/post/2015-06-21-nhan-dang-abc-co-ban/</link>
       <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-06-21-nhan-dang-abc-co-ban/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://example.org/images/NhandangABCcoban_2.png&#34; alt=&#34;NhandangABCcoban_2&#34; /&gt;&lt;/p&gt;
+      <guid>http://ndtho.github.io/post/2015-06-21-nhan-dang-abc-co-ban/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ndtho.github.io/images/NhandangABCcoban_2.png&#34; alt=&#34;NhandangABCcoban_2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ngồi sắp xếp lại các project cũ, thấy cái này hay hay, share mọi người chơi.&lt;/p&gt;
 
@@ -54,11 +54,11 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Sử dụng công cụ debug của Visual Studio - Phần 3</title>
-      <link>http://example.org/post/2015-06-11-su-dung-cong-cu-debug-cua-visual-studio-phan-3/</link>
+      <link>http://ndtho.github.io/post/2015-06-11-su-dung-cong-cu-debug-cua-visual-studio-phan-3/</link>
       <pubDate>Thu, 11 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-06-11-su-dung-cong-cu-debug-cua-visual-studio-phan-3/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://example.org/images/SudungcongcudebugtrongVS_12.png&#34; alt=&#34;SudungcongcudebugtrongVS_12.png&#34; /&gt;&lt;/p&gt;
+      <guid>http://ndtho.github.io/post/2015-06-11-su-dung-cong-cu-debug-cua-visual-studio-phan-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ndtho.github.io/images/SudungcongcudebugtrongVS_12.png&#34; alt=&#34;SudungcongcudebugtrongVS_12.png&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Công cụ hỗ trợ debug của Visual Studio rất đa dạng. Mình thật sự chưa tìm hiểu hết các tính năng của nó, chỉ biết một phần nhỏ để áp dụng vào công việc hiện tại. Đối với mình, đó là một điều rất đáng tiếc.&lt;/p&gt;
 
@@ -69,10 +69,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Sử dụng công cụ debug của Visual Studio - Phần 1</title>
-      <link>http://example.org/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-1/</link>
+      <link>http://ndtho.github.io/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-1/</link>
       <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-1/</guid>
+      <guid>http://ndtho.github.io/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-1/</guid>
       <description>&lt;p&gt;Làm việc chung với một số bạn, mình nhận thấy các bạn ít sử dụng đến công cụ debug (gỡ rối) của trình IDE nói chung, Visual Studio nói riêng. Khi chương trình gặp lỗi hay ra kết quả sai, bạn không biết tại sao và phải lần mò từng dòng code. Trong khi đó, hầu hết các IDE đều hỗ trợ khả năng debug chương trình, chạy từng bước và theo dõi biến thay đổi giá trị như thế nào.&lt;/p&gt;
 
 &lt;p&gt;Ở đây mình sẽ chia sẻ một số kinh nghiệm mình có giúp các bạn làm quen với công cụ debug rất mạnh của Visual Studio 2013, từ đó bạn có thể dễ dàng tìm hiểu và sử dụng ở những IDE khác.&lt;/p&gt;</description>
@@ -80,10 +80,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Sử dụng công cụ debug của Visual Studio - Phần 2</title>
-      <link>http://example.org/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-2/</link>
+      <link>http://ndtho.github.io/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-2/</link>
       <pubDate>Thu, 04 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-2/</guid>
+      <guid>http://ndtho.github.io/post/2015-06-04-su-dung-cong-cu-debug-cua-visual-studio-phan-2/</guid>
       <description>&lt;p&gt;Không biết mọi người thế nào, chứ với mình, quá trình sửa lỗi, debug chương trình là phần mình khoái nhất. Nó đòi hỏi tư duy và lập luận logic rất cao, bạn cũng cần cho mình một chiến lược cụ thể mới có thể đẩy nhanh tốc độ debug, khoanh vùng vị trí code lỗi, và sửa nó. Quan trọng hơn, bạn phải biết bạn viết gì, code bạn chạy như thế nào, chuyện gì sẽ xảy ra tiếp theo, tức là phải quản lí được code của mình. Hãy tưởng tượng quá trình chạy của chương trình, bạn sẽ thấy nó khá dễ dàng.&lt;/p&gt;
 
 &lt;p&gt;Tự sướng tí :wink: Ta tiếp tục nhé!&lt;/p&gt;</description>
@@ -91,10 +91,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Con trỏ trong cpp</title>
-      <link>http://example.org/post/2015-05-31-con-tro-trong-cpp/</link>
+      <link>http://ndtho.github.io/post/2015-05-31-con-tro-trong-cpp/</link>
       <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-05-31-con-tro-trong-cpp/</guid>
+      <guid>http://ndtho.github.io/post/2015-05-31-con-tro-trong-cpp/</guid>
       <description>&lt;p&gt;Khái niệm con trỏ mình đã gặp từ hồi cấp 3 lúc học Pascal, cũng chật vật lắm mới hiểu được rồi dùng để tạo danh sách liên kết, heap, cây, giải được một lốc bài toán tin.&lt;/p&gt;
 
 &lt;p&gt;Tìm hiểu nhiều hơn, nó cũng có nhiều trò vui nữa, sử dụng con trỏ access vào vùng memory dành riêng cho việc hiển thị màn hình (mình nhớ là mảng ký tự 80x25) khi đó thay đổi một phần tử [x, y] trong mảng, tương ứng ô kí tự trên màn hình console ở vị trí [x, y] cũng thay đổi theo (gốc toạ độ ở màn hình console là góc trái trên), mình dùng cái này để viết chương trình vẽ chữ (tặng gái :smile:). Nguyên tắc là chương trình sẽ nhận toạ độ mà chuột click vào, sau đó viết một kí tự (người dùng đã nhập trước) ngay vị trí ấy (không có dùng thủ tục gotoxy nhá). Ngồi mở lại file đó định chụp cái hình nhưng Windows 8 không chạy, buồn ghê :cry:&lt;/p&gt;
@@ -106,10 +106,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Khai báo và khởi tạo</title>
-      <link>http://example.org/post/2015-05-31-khai-bao-khoi-tao/</link>
+      <link>http://ndtho.github.io/post/2015-05-31-khai-bao-khoi-tao/</link>
       <pubDate>Sun, 31 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-05-31-khai-bao-khoi-tao/</guid>
+      <guid>http://ndtho.github.io/post/2015-05-31-khai-bao-khoi-tao/</guid>
       <description>&lt;p&gt;Khai báo và khởi tạo có giống nhau không bạn? Đọc xong rồi bạn sẽ rõ, còn mà nếu không hiểu nữa, comment bên dưới nhé!&lt;/p&gt;
 
 &lt;p&gt;Đầu tiên khẳng định với bạn là hai cái đó khác nhau hoàn toàn.&lt;/p&gt;
@@ -132,19 +132,19 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>Hàm main trong cpp</title>
-      <link>http://example.org/post/2015-05-12-ham-main-trong-cpp/</link>
+      <link>http://ndtho.github.io/post/2015-05-12-ham-main-trong-cpp/</link>
       <pubDate>Tue, 12 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-05-12-ham-main-trong-cpp/</guid>
+      <guid>http://ndtho.github.io/post/2015-05-12-ham-main-trong-cpp/</guid>
       <description>&lt;p&gt;Tất cả chương trình viết bằng cpp đều cần hàm main để thực thi. Đây là hàm quan trọng nhất, nó có nhiệm vụ điều phối và kiểm soát toàn bộ chương trình.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tập tành viết blog</title>
-      <link>http://example.org/post/2015-05-11-tap-tanh-viet-blog/</link>
+      <link>http://ndtho.github.io/post/2015-05-11-tap-tanh-viet-blog/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/2015-05-11-tap-tanh-viet-blog/</guid>
+      <guid>http://ndtho.github.io/post/2015-05-11-tap-tanh-viet-blog/</guid>
       <description>&lt;p&gt;Đang tập sử dụng GitHub, nghe đồn có thể làm trang web cá nhân xài GitHub làm host luôn (miễn phí đấy :heart_eyes:). Mày mò vọc vạch cũng tạo xong, cơ mà chưa biết viết gì :smile:&lt;/p&gt;
 
 &lt;p&gt;Bản thân hay lang thang trên mạng, tìm hiểu thì cũng nhiều, hiểu không được bao nhiêu, vài ngày thì lại quên hết :laughing: Thế cho nên, làm cái này, viết lại sau này còn có cái lôi ra đọc :smile:&lt;/p&gt;</description>
@@ -152,10 +152,10 @@ Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp đ
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>http://ndtho.github.io/about/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>http://ndtho.github.io/about/</guid>
       <description>What are you looking for here? GO AWAYYYY! :scream:
  </description>
     </item>
