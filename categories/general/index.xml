@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on My New Hugo Site</title>
+    <link>http://example.org/categories/general/</link>
+    <description>Recent content in General on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome to my new blog</title>
+      <link>http://example.org/post/2018-02-01-welcome-to-my-new-blog/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/2018-02-01-welcome-to-my-new-blog/</guid>
+      <description>Tèn ten ten tennn :laughing:
+Sau hơn 1 năm vắng bóng, em ấy đã trở lại và xinh đẹp hơn xưa :smile:
+Hời, mình lỡ dại, xoá mất project cũ dòi, thế là không chụp được hình, để mọi người so sánh, em nó thời &amp;ldquo;bán sữa đậu nành&amp;rdquo;, và &amp;ldquo;đạp chiếc xe màu xanh&amp;rdquo; với cái thời hiện đại bây giờ. Nếu mà có, chắc mọi người sẽ ngạc nhiên lắm lắm về cái sự gọi là nhan sắc của em nó.</description>
+    </item>
+    
+    <item>
+      <title>Tập tành viết blog</title>
+      <link>http://example.org/post/2015-05-11-tap-tanh-viet-blog/</link>
+      <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/2015-05-11-tap-tanh-viet-blog/</guid>
+      <description>&lt;p&gt;Đang tập sử dụng GitHub, nghe đồn có thể làm trang web cá nhân xài GitHub làm host luôn (miễn phí đấy :heart_eyes:). Mày mò vọc vạch cũng tạo xong, cơ mà chưa biết viết gì :smile:&lt;/p&gt;
+
+&lt;p&gt;Bản thân hay lang thang trên mạng, tìm hiểu thì cũng nhiều, hiểu không được bao nhiêu, vài ngày thì lại quên hết :laughing: Thế cho nên, làm cái này, viết lại sau này còn có cái lôi ra đọc :smile:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
