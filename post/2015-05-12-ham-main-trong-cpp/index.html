@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  
+  <title>Hàm main trong cpp - Black Rabbit</title>
+  
+
+  
+  <link rel="stylesheet" href="https://ndtho8205.github.io/scss/main.min.css" />
+</head>
+
+
+<body>
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">Hàm main trong cpp</h1>
+            <time class="post-date" datetime="2015-05-12">
+                12 May 2015
+            </time>
+        </header>
+
+        <div class="post-content">
+            <p>Tất cả chương trình viết bằng cpp đều cần hàm main để thực thi. Đây là hàm quan trọng nhất, nó có nhiệm vụ điều phối và kiểm soát toàn bộ chương trình.</p>
+
+<h3 id="hàm-main-được-gọi-và-xử-lý-trước-mọi-hàm-khác-trong-chương-trình">Hàm main được gọi và xử lý trước mọi hàm khác trong chương trình?</h3>
+
+<p>Hãy xem xét ví dụ dưới đây.</p>
+
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+class MyClass {
+public:
+MyClass() { //constructor
+cout &lt;&lt; &quot;Not in main!&quot; &lt;&lt; endl;
+}
+};
+
+MyClass globalObject;
+
+int main() {
+cout &lt;&lt; &quot;In main!&quot; &lt;&lt; endl;
+return 0;
+}
+</code></pre>
+
+<p><code>globalObject</code> là một đối tượng được khai báo toàn cục. Khi khai báo, constructor của lớp MyClass được gọi trước main, kết quả dòng <code>Not in main!</code> được in đầu tiên. Constructor có thể gọi các hàm khác và kết thúc, sau đó hàm main được gọi. Vì vậy hàm đầu tiên được gọi khi chạy chương trình không nhất thiết phải là main.</p>
+
+<h3 id="return-0">return 0;</h3>
+
+<pre><code class="language-cpp">int main() {
+return 0;
+}
+</code></pre>
+
+<p>Bạn có thắc mắc tại sao hàm main lại cần <code>return</code>? <code>return 0</code> để làm gì? <code>return</code> giá trị khác có ảnh hưởng gì không?</p>
+
+<p><img src="/images/Hammaintrongcpp_return_1.png" alt="Hammaintrongcpp_return_Ubuntu" /></p>
+
+<p><img src="/images/Hammaintrongcpp_return_2.png" alt="Hammaintrongcpp_return_Windows" /></p>
+
+<p>Số 3 được in ra, đó chính là giá trị trả về của hàm main. Giá trị đó được hệ điều hành dùng để xác định quá trình xử lý của chương trình thành công hay không. Thông thường nếu thành công, nó sẽ trả về giá trị dương hoặc trung hoà (&gt;=0), ngược lại trả về giá trị âm (&lt;0). Đó là ý nghĩa của lệnh return cuối hàm main, nó được chuẩn ANSI C khuyến cáo sử dụng.</p>
+        </div>
+    </article>
+</body>
+
+</html>
