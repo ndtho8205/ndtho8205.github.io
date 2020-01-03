@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Tho Nguyen" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<title>
+   Hàm main trong cpp - Black Rabbit
+</title>
+
+
+
+
+<link rel="stylesheet" href="https://ndtho8205.github.io/css/style.css" />
+
+
+
+</head>
+
+
+  <body>
+    <header>
+
+
+
+<div>
+  <h1><a href="https://ndtho8205.github.io/">Black Rabbit</a></h1>
+  
+</div>
+
+<nav>
+  
+     <a href="/">Blog</a>
+  
+     <a href="/projects/">Projects</a>
+  
+     <a href="/reading/">Reading</a>
+  
+     <a href="/about/">About</a>
+  
+</nav>
+
+</header>
+
+
+    <div id="content">
+        
+
+<article>
+  <header>
+    <h1>Hàm main trong cpp</h1>
+
+    
+    <time datetime="2015-05-12">
+      12 May 2015
+    </time>
+    
+
+    
+
+  </header>
+
+  <div class="">
+    <p>Tất cả chương trình viết bằng cpp đều cần hàm main để thực thi. Đây là hàm quan trọng nhất, nó có nhiệm vụ điều phối và kiểm soát toàn bộ chương trình.</p>
+<h3 id="hm-main-c-gi-v-x-l-trc-mi-hm-khc-trong-chng-trnh">Hàm main được gọi và xử lý trước mọi hàm khác trong chương trình?</h3>
+<p>Hãy xem xét ví dụ dưới đây.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyClass</span> {
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+MyClass() { <span style="color:#75715e">//constructor
+</span><span style="color:#75715e"></span>cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Not in main!</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> endl;
+}
+};
+
+MyClass globalObject;
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">In main!</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> endl;
+<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p><code>globalObject</code> là một đối tượng được khai báo toàn cục. Khi khai báo, constructor của lớp MyClass được gọi trước main, kết quả dòng <code>Not in main!</code> được in đầu tiên. Constructor có thể gọi các hàm khác và kết thúc, sau đó hàm main được gọi. Vì vậy hàm đầu tiên được gọi khi chạy chương trình không nhất thiết phải là main.</p>
+<h3 id="return-0">return 0;</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p>Bạn có thắc mắc tại sao hàm main lại cần <code>return</code>? <code>return 0</code> để làm gì? <code>return</code> giá trị khác có ảnh hưởng gì không?</p>
+<p><img src="/images/Hammaintrongcpp_return_1.png" alt="Hammaintrongcpp_return_Ubuntu"></p>
+<p><img src="/images/Hammaintrongcpp_return_2.png" alt="Hammaintrongcpp_return_Windows"></p>
+<p>Số 3 được in ra, đó chính là giá trị trả về của hàm main. Giá trị đó được hệ điều hành dùng để xác định quá trình xử lý của chương trình thành công hay không. Thông thường nếu thành công, nó sẽ trả về giá trị dương hoặc trung hoà (&gt;=0), ngược lại trả về giá trị âm (&lt;0). Đó là ý nghĩa của lệnh return cuối hàm main, nó được chuẩn ANSI C khuyến cáo sử dụng.</p>
+  </div>
+</article>
+
+
+    </div>
+
+    <footer>
+  <div>
+    
+      &copy; 2019 Tho Nguyen. Some Rights Reserved.
+    
+  </div>
+</footer>
+
+    
+
+    
+
+  </body>
+
+</html>
