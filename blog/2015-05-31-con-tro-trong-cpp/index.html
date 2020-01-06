@@ -3,73 +3,49 @@
 
   <head>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="author" content="Tho Nguyen" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tho Nguyen" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<title>
-   Con trỏ trong cpp - Black Rabbit
-</title>
-
-
-
-
-<link rel="stylesheet" href="https://ndtho8205.github.io/css/style.css" />
-
-
+  <title>Con trỏ trong cpp - Rabbit</title><link rel="shortcut icon" href="images/favicon.ico" type = "image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  
+  <link rel="stylesheet" href="https://ndtho8205.github.io/css/main.min.1c6cf7e257548c166e6b9e056ce8f3a39d861acdce937f6a165cd501b68bfe35.css" integrity="sha256-HGz34ldUjBZua54FbOjzo52GGs3Ok39qFlzVAbaL/jU=" />
 
 </head>
 
 
-  <body>
-    <header>
+  <body class="w-100 roboto">
+    <header class="mw8 center mb3-ns mb4-m mb5-l ph4 pt4 pt2-l pb2 flex flex-column flex-row-l justify-between items-center top-0-l bb b--black-10">
 
+  <a class="link dim black mb3 mb0-l" href="https://ndtho8205.github.io/">
 
+    
+    <img src="/images/logo.svg" alt="logo" width="48" class="pa1 v-mid"/>
+    
 
-<div>
-  <h1><a href="https://ndtho8205.github.io/">Black Rabbit</a></h1>
-  
-</div>
-
-<nav>
-  
-     <a href="/">Blog</a>
-  
-     <a href="/projects/">Projects</a>
-  
-     <a href="/reading/">Reading</a>
-  
-     <a href="/about/">About</a>
-  
-</nav>
-
+    <span class="pl1 f3 playfair b tracked-mega v-mid">Rabbit</span>
+  </a><nav class="mv3"><a class="mh3 black link hover-blue underline-hover f5 b" href="/">Blog</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/projects/">Projects</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/reading/">Reading</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/about/">About</a></nav>
 </header>
 
 
-    <div id="content">
-        
+    
+    
 
-<article>
+    <main class="mw7 ph3 center">
+      
+
+<article class="f5 lh-copy tj">
   <header>
-    <h1>Con trỏ trong cpp</h1>
+    <h1 class="playfair">Con trỏ trong cpp</h1><aside class="fs-caption"><time datetime="2015-05-31T00:00:00Z">31 May 2015</time></aside>
+</header>
 
-    
-    <time datetime="2015-05-31">
-      31 May 2015
-    </time>
-    
-
-    
-
-  </header>
-
-  <div class="">
-    <p>Khái niệm con trỏ mình đã gặp từ hồi cấp 3 lúc học Pascal, cũng chật vật lắm mới hiểu được rồi dùng để tạo danh sách liên kết, heap, cây, giải được một lốc bài toán tin.</p>
+  <div class=""><p>Khái niệm con trỏ mình đã gặp từ hồi cấp 3 lúc học Pascal, cũng chật vật lắm mới hiểu được rồi dùng để tạo danh sách liên kết, heap, cây, giải được một lốc bài toán tin.</p>
 <p>Tìm hiểu nhiều hơn, nó cũng có nhiều trò vui nữa, sử dụng con trỏ access vào vùng memory dành riêng cho việc hiển thị màn hình (mình nhớ là mảng ký tự 80x25) khi đó thay đổi một phần tử [x, y] trong mảng, tương ứng ô kí tự trên màn hình console ở vị trí [x, y] cũng thay đổi theo (gốc toạ độ ở màn hình console là góc trái trên), mình dùng cái này để viết chương trình vẽ chữ (tặng gái 😄). Nguyên tắc là chương trình sẽ nhận toạ độ mà chuột click vào, sau đó viết một kí tự (người dùng đã nhập trước) ngay vị trí ấy (không có dùng thủ tục gotoxy nhá). Ngồi mở lại file đó định chụp cái hình nhưng Windows 8 không chạy, buồn ghê 😢</p>
 <p>Quay lại vấn đề chính. Trong C/cpp có thể nói con trỏ đã được nâng lên một tầm cao mới, một công cụ cực kì mạnh 👏 Mạnh như thế nào? Hồi sau sẽ rõ 😏</p>
 <p>Các khái niệm liên quan đến con trỏ đều khá trừu tượng, tìm hiểu không tường tận sẽ có nhiều vấn đề khiến bạn khó hiểu, hiểu sai (mình không dám bảo là mình master phần này, có sai sót gì cùng nhau thảo luận, sửa chữa, bổ sung nhé).</p>
-<h3 id="con-tr-l-g">Con trỏ là gì?</h3>
+<h3 id="con-trỏ-là-gì">Con trỏ là gì?</h3>
 <p>Con trỏ là một biến dùng để chứa địa chỉ. Bản chất con trỏ vẫn là một <strong>biến nguyên</strong> bình thường như bao biến nguyên khác. Tức là nó cũng có địa chỉ riêng trong bộ nhớ, giá trị nó lưu trữ cũng thuộc dạng số nguyên.</p>
 <p><strong>Thứ nhất</strong>, mình đã nói con trỏ là một biến nguyên, có thể bạn sẽ thắc mắc với các khai báo sau.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">sampleStruct</span> {
@@ -119,24 +95,27 @@ sampleStruct <span style="color:#960050;background-color:#1e0010">\</span><span 
 <p>Xem hình này để dễ hình dung nhé.</p>
 <p><img src="/images/Controtrongcpp_2.png" alt="Controtrongcpp_2.png"></p>
 <p>Xong bài! 😂 Hy vọng nó dễ hiểu với mọi người.</p>
-<p>À về dòng <code>Virtual memory</code>, là do mình đang tìm hiểu Memory management, đọc một số tài liệu thấy ghi vậy là chuẩn nhất. Bài sau mình sẽ làm rõ. Chả là vì tìm hiểu chưa tới đâu, lại đụng chạm tới Assembly, gần thi nên thời gian hạn hẹp. Hẹn lại nhé! 😄</p>
-  </div>
+<p>À về dòng <code>Virtual memory</code>, là do mình đang tìm hiểu Memory management, đọc một số tài liệu thấy ghi vậy là chuẩn nhất. Bài sau mình sẽ làm rõ. Chả là vì tìm hiểu chưa tới đâu, lại đụng chạm tới Assembly, gần thi nên thời gian hạn hẹp. Hẹn lại nhé! 😄</p></div>
 </article>
 
 
-    </div>
 
-    <footer>
-  <div>
-    
-      &copy; 2019 Tho Nguyen. Some Rights Reserved.
-    
-  </div>
+
+
+    </main>
+
+    <footer class="mt5 pa4 mid-gray bt b--black-10">
+  <div class="f6 tc">&copy; Tho Nguyen, 2020.
+      Built with <a class="link black hover-blue" href="https://gohugo.io/">Hugo</a>.</div>
 </footer>
 
-    
 
     
+<script src="https://ndtho8205.github.io/js/main.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js">
+</script>
+
+
+
 
   </body>
 

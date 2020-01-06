@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ndtho8205.github.io/</loc>
-    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ndtho8205.github.io/blog/</loc>
     <lastmod>2018-02-01T00:00:00+00:00</lastmod>
   </url>
@@ -19,6 +14,11 @@
   
   <url>
     <loc>https://ndtho8205.github.io/categories/general/</loc>
+    <lastmod>2018-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ndtho8205.github.io/</loc>
     <lastmod>2018-02-01T00:00:00+00:00</lastmod>
   </url>
   

@@ -3,69 +3,45 @@
 
   <head>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="author" content="Tho Nguyen" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tho Nguyen" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<title>
-   Sử dụng công cụ debug của Visual Studio - Phần 3 - Black Rabbit
-</title>
-
-
-
-
-<link rel="stylesheet" href="https://ndtho8205.github.io/css/style.css" />
-
-
+  <title>Sử dụng công cụ debug của Visual Studio - Phần 3 - Rabbit</title><link rel="shortcut icon" href="images/favicon.ico" type = "image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /><link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  
+  <link rel="stylesheet" href="https://ndtho8205.github.io/css/main.min.1c6cf7e257548c166e6b9e056ce8f3a39d861acdce937f6a165cd501b68bfe35.css" integrity="sha256-HGz34ldUjBZua54FbOjzo52GGs3Ok39qFlzVAbaL/jU=" />
 
 </head>
 
 
-  <body>
-    <header>
+  <body class="w-100 roboto">
+    <header class="mw8 center mb3-ns mb4-m mb5-l ph4 pt4 pt2-l pb2 flex flex-column flex-row-l justify-between items-center top-0-l bb b--black-10">
 
+  <a class="link dim black mb3 mb0-l" href="https://ndtho8205.github.io/">
 
+    
+    <img src="/images/logo.svg" alt="logo" width="48" class="pa1 v-mid"/>
+    
 
-<div>
-  <h1><a href="https://ndtho8205.github.io/">Black Rabbit</a></h1>
-  
-</div>
-
-<nav>
-  
-     <a href="/">Blog</a>
-  
-     <a href="/projects/">Projects</a>
-  
-     <a href="/reading/">Reading</a>
-  
-     <a href="/about/">About</a>
-  
-</nav>
-
+    <span class="pl1 f3 playfair b tracked-mega v-mid">Rabbit</span>
+  </a><nav class="mv3"><a class="mh3 black link hover-blue underline-hover f5 b" href="/">Blog</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/projects/">Projects</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/reading/">Reading</a><a class="mh3 black link hover-blue underline-hover f5 b" href="/about/">About</a></nav>
 </header>
 
 
-    <div id="content">
-        
+    
+    
 
-<article>
+    <main class="mw7 ph3 center">
+      
+
+<article class="f5 lh-copy tj">
   <header>
-    <h1>Sử dụng công cụ debug của Visual Studio - Phần 3</h1>
+    <h1 class="playfair">Sử dụng công cụ debug của Visual Studio - Phần 3</h1><aside class="fs-caption"><time datetime="2015-06-11T00:00:00Z">11 Jun 2015</time></aside>
+</header>
 
-    
-    <time datetime="2015-06-11">
-      11 Jun 2015
-    </time>
-    
-
-    
-
-  </header>
-
-  <div class="">
-    <p><img src="/images/SudungcongcudebugtrongVS_12.png" alt="SudungcongcudebugtrongVS_12.png"></p>
+  <div class=""><p><img src="/images/SudungcongcudebugtrongVS_12.png" alt="SudungcongcudebugtrongVS_12.png"></p>
 <p>Công cụ hỗ trợ debug của Visual Studio rất đa dạng. Mình thật sự chưa tìm hiểu hết các tính năng của nó, chỉ biết một phần nhỏ để áp dụng vào công việc hiện tại. Đối với mình, đó là một điều rất đáng tiếc.</p>
 <p>Các bài viết này, chỉ là giới thiệu, bạn phải tự tìm tòi, khám phá để sử dụng thật tốt những công cụ có sẵn. Có những công cụ liên quan đến Parallel (lớp trong C# để xử lý song song), Threads (luồng), Disassembly (xem mã Assembly của chương trình), Registers (thanh ghi),&hellip; đòi hỏi nhiều kiến thức nâng cao mới sử dụng tốt được. Những kiến thức đó, mình chưa biết nên thứ lỗi nhé, mình không thể giới thiệu chúng được 😢</p>
 <p>Tiếp tục nhé! Sau đây là phần cuối của chuỗi bài viết &ldquo;Sử dụng công cụ debug của Visual Studio&rdquo; 😉</p>
@@ -85,24 +61,27 @@
 <p>Nếu bạn muốn dừng khi một biểu thức thay đổi giá trị thì click chọn <code>Has changed</code> nhé.</p>
 <p>Thêm cái Hit Count nữa hen 😇 Nhanh thôi, bạn thấy <code>count</code> là biết rồi. Breakpoint chỉ dừng khi điều kiện ở Condition thoả mãn một số lần nhất định.</p>
 <p><img src="/images/SudungcongcudebugtrongVS_15.png" alt="SudungcongcudebugtrongVS_15.png"></p>
-<p>Roài xong roài! ❤ Chúc bạn nhanh chóng luyện thành tuyệt kĩ debug hén 👌</p>
-  </div>
+<p>Roài xong roài! ❤ Chúc bạn nhanh chóng luyện thành tuyệt kĩ debug hén 👌</p></div>
 </article>
 
 
-    </div>
 
-    <footer>
-  <div>
-    
-      &copy; 2019 Tho Nguyen. Some Rights Reserved.
-    
-  </div>
+
+
+    </main>
+
+    <footer class="mt5 pa4 mid-gray bt b--black-10">
+  <div class="f6 tc">&copy; Tho Nguyen, 2020.
+      Built with <a class="link black hover-blue" href="https://gohugo.io/">Hugo</a>.</div>
 </footer>
 
-    
 
     
+<script src="https://ndtho8205.github.io/js/main.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js">
+</script>
+
+
+
 
   </body>
 
