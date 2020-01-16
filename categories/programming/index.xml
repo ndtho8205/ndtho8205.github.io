@@ -14,11 +14,26 @@
 &lt;ul>
 &lt;li>
 &lt;p>Khai báo (declare)&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#66d9ef">int&lt;/span> a; &lt;span style="color:#75715e">// khai báo biến nguyên a
-&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="kt">int&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// khai báo biến nguyên a
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Khởi tạo (initialize)&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="color:#66d9ef">int&lt;/span> a &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">10&lt;/span>; &lt;span style="color:#75715e">// khai báo biến nguyên a, sau đó giá trị 10 được gán vào a
-&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">// thao tác này gọi là khởi tạo
-&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="kt">int&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">// khai báo biến nguyên a, sau đó giá trị 10 được gán vào a
+&lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="c1">// thao tác này gọi là khởi tạo
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
 &lt;/ul></description></item><item><title>Hàm main trong cpp</title><link>https://ndtho8205.github.io/blog/2015-05-12-ham-main-trong-cpp/</link><pubDate>Tue, 12 May 2015 00:00:00 +0000</pubDate><guid>https://ndtho8205.github.io/blog/2015-05-12-ham-main-trong-cpp/</guid><description>&lt;p>Tất cả chương trình viết bằng cpp đều cần hàm main để thực thi. Đây là hàm quan trọng nhất, nó có nhiệm vụ điều phối và kiểm soát toàn bộ chương trình.&lt;/p></description></item></channel></rss>
