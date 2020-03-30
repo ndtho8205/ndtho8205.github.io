@@ -1,4 +1,4 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Tho Nguyen"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Hàm main trong cpp - Rabbit</title><link rel="shortcut icon" href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=icon href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=stylesheet href=https://ndtho8205.github.io/css/main.min.059034cca2243ed425bb0ccdcc9ef8a8669f0d5a0e47b5079aa4ea0c484b6a0c.css integrity="sha256-BZA0zKIkPtQluwzNzJ74qGafDVoOR7UHmqTqDEhLagw="></head><body class="w-100 pa2 opensans f6 f5-ns tc-primary"><header class="mw8 center mb4 mb5-ns ph3 ph4-ns pt4 pt2-l pb2 flex flex-column flex-row-l justify-between items-center top-0-l bb b--divider"><a class="link tc-primary mb3 mb0-l" href=https://ndtho8205.github.io/><img src=/images/logo.svg alt=logo class="v-mid w-logo">
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Tho Nguyen"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Hàm main trong cpp - Rabbit</title><link rel="shortcut icon" href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=icon href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=stylesheet href=https://ndtho8205.github.io/css/main.min.d50f1bc85e619232839dd5fb4a9bdc6c450a38da826e1438ed09d1abeeba78dd.css integrity="sha256-1Q8byF5hkjKDndX7SpvcbEUKONqCbhQ47QnRq+66eN0="></head><body class="w-100 pa2 opensans f6 f5-ns tc-primary"><header class="mw8 center mb4 mb5-ns ph3 ph4-ns pt4 pt2-l pb2 flex flex-column flex-row-l justify-between items-center top-0-l bb b--divider"><a class="link tc-primary mb3 mb0-l" href=https://ndtho8205.github.io/><img src=/images/logo.svg alt=logo class="v-mid w-logo">
 <span class="pl2 f3 playfair b tracked-mega v-mid">Rabbit</span></a><nav class=mv3><a class="mh2 mh3-ns link tc-secondary hover-accent f7 f6-ns ttu fw6 tracked" href=/>Blog</a>
 <a class="mh2 mh3-ns link tc-secondary hover-accent f7 f6-ns ttu fw6 tracked" href=/projects/>Projects</a>
 <a class="mh2 mh3-ns link tc-secondary hover-accent f7 f6-ns ttu fw6 tracked" href=/reading/>Reading</a>
@@ -18,26 +18,26 @@
 </span><span class=lnt>14
 </span><span class=lnt>15
 </span><span class=lnt>16
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#</span><span class=cp>include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
 </span><span class=cp></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
 
 <span class=k>class</span> <span class=nc>MyClass</span> <span class=p>{</span>
   <span class=k>public</span><span class=o>:</span>
-    <span class=n>MyClass</span><span class=p>(</span><span class=p>)</span> <span class=p>{</span> <span class=c1>//constructor
-</span><span class=c1></span>      <span class=n>cout</span> <span class=o>&lt;</span><span class=o>&lt;</span> <span class=sa></span><span class=s>&#34;</span><span class=s>Not in main!</span><span class=s>&#34;</span> <span class=o>&lt;</span><span class=o>&lt;</span> <span class=n>endl</span><span class=p>;</span>
+    <span class=n>MyClass</span><span class=p>()</span> <span class=p>{</span> <span class=c1>//constructor
+</span><span class=c1></span>      <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;Not in main!&#34;</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
     <span class=p>}</span>
-<span class=p>}</span><span class=p>;</span>
+<span class=p>};</span>
 
 <span class=n>MyClass</span> <span class=n>globalObject</span><span class=p>;</span>
 
-<span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=p>)</span> <span class=p>{</span>
-  <span class=n>cout</span> <span class=o>&lt;</span><span class=o>&lt;</span> <span class=sa></span><span class=s>&#34;</span><span class=s>In main!</span><span class=s>&#34;</span> <span class=o>&lt;</span><span class=o>&lt;</span> <span class=n>endl</span><span class=p>;</span>
+<span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+  <span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=s>&#34;In main!&#34;</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
   <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
 <span class=p>}</span>
 </code></pre></td></tr></table></div></div><p><code>globalObject</code> là một đối tượng được khai báo toàn cục. Khi khai báo, constructor của lớp MyClass được gọi trước main, kết quả dòng <code>Not in main!</code> được in đầu tiên. Constructor có thể gọi các hàm khác và kết thúc, sau đó hàm main được gọi. Vì vậy hàm đầu tiên được gọi khi chạy chương trình không nhất thiết phải là main.</p><h3 id=return-0>return 0;</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=kt>int</span> <span class=nf>main</span><span class=p>(</span><span class=p>)</span> <span class=p>{</span>
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-cpp data-lang=cpp><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
 <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
 <span class=p>}</span>
 </code></pre></td></tr></table></div></div><p>Bạn có thắc mắc tại sao hàm main lại cần <code>return</code>? <code>return 0</code> để làm gì? <code>return</code> giá trị khác có ảnh hưởng gì không?</p><p><img src=/images/Hammaintrongcpp_return_1.png alt=Hammaintrongcpp_return_Ubuntu></p><p><img src=/images/Hammaintrongcpp_return_2.png alt=Hammaintrongcpp_return_Windows></p><p>Số 3 được in ra, đó chính là giá trị trả về của hàm main. Giá trị đó được hệ điều hành dùng để xác định quá trình xử lý của chương trình thành công hay không. Thông thường nếu thành công, nó sẽ trả về giá trị dương hoặc trung hoà (>=0), ngược lại trả về giá trị âm (&lt;0). Đó là ý nghĩa của lệnh return cuối hàm main, nó được chuẩn ANSI C khuyến cáo sử dụng.</p></div></article></main><footer class="mt5 pa4 mid-gray bt b--divider"><div class="f6 tc tc-secondary">&copy; Tho Nguyen, 2020.
