@@ -1,0 +1,24 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Tho Nguyen"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Configure Docker ulimits - Rabbit</title><link rel="shortcut icon" href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=icon href=https://ndtho8205.github.io/images/favicon.ico type=image/x-icon><link rel=stylesheet href=https://ndtho8205.github.io/css/style.css media=all></head><body><header class="py-4 w-full border-b border-divider sm:flex sm:items-center sm:mx-auto sm:px-4 sm:max-w-3xl md:max-w-5xl"><a class="block mb-4 mt-6 sm:my-0" href=https://ndtho8205.github.io/><img src=/images/logo.svg alt=logo class="mx-auto w-20 sm:w-16"></a><nav class="text-center text-gray text-sm font-medium uppercase sm:ml-auto"><a class="mx-1 px-1 hover:text-primary focus:text-primary" href=/>Blog</a>
+<a class="mx-1 px-1 hover:text-primary focus:text-primary" href=/reading/>Reading</a>
+<a class="mx-1 px-1 hover:text-primary focus:text-primary" href=/about/>About</a></nav></header><main class="flex-grow mb-12 mt-12 mx-auto px-4 w-full max-w-xl sm:max-w-2xl md:max-w-3xl"><article><header class=mb-16><aside class=flex><time datetime=2021-06-21T03:47:50+09:00 class=text-gray>21 Jun 2021</time><div class=ml-auto></div></aside><h1 class="mt-4 text-primary-dark text-4xl font-bold">Configure Docker ulimits</h1></header><div class="prose prose-lg"><h2 id=issues>Issues</h2><ul><li>[https://github.com/docker/for-linux/issues/541]</li><li>[https://github.com/docker-library/mysql/issues/579]</li></ul><h2 id=solution>Solution</h2><p>An example of <code>/etc/docker/daemon.json</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;experimental&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=p>,</span>
+  <span class=nt>&#34;default-ulimits&#34;</span><span class=p>:</span> <span class=p>{</span>
+    <span class=nt>&#34;nofile&#34;</span><span class=p>:</span> <span class=p>{</span>
+      <span class=nt>&#34;Name&#34;</span><span class=p>:</span> <span class=s2>&#34;nofile&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;Hard&#34;</span><span class=p>:</span> <span class=mi>262144</span><span class=p>,</span>
+      <span class=nt>&#34;Soft&#34;</span><span class=p>:</span> <span class=mi>262144</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></td></tr></table></div></div></div></article></main><footer class="py-6 border-t border-divider"><p class="text-center text-gray text-sm">&copy; Tho Nguyen, 2021. Built with
+<a class="link border-b" href=https://gohugo.io/>Hugo</a>.</p></footer><script async src="https://cdn.panelbear.com/analytics.js?site=1pfyDmOljAe"></script><script>window.panelbear=window.panelbear||function(){(window.panelbear.q=window.panelbear.q||[]).push(arguments)},panelbear('config',{site:'1pfyDmOljAe'})</script></body></html>
